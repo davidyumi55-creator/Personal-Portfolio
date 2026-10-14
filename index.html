@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Your Name - aspiring web developer.">
+    <title>Yumi David | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="#home" class="brand">
+                <span class="brand-name">Yumi David</span>
+                <span class="brand-role">IT Student &amp; WMAD Specialization</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle light or dark mode">☀️</button>
+                <a href="#contact" class="btn btn-outline nav-cta">Let's Connect</a>
+                <button class="icon-btn hamburger" id="hamburger" type="button"
+                        aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="eyebrow">[ IT Student ]</p>
+                <h1>I build web experiences that feel like the <span class="accent">future.</span></h1>
+                <p class="intro">
+                    I craft clean, responsive, and useful web and mobile applications, turning ideas
+                    into projects that people enjoy using.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work →</a>
+                    <a href="#about" class="btn btn-outline">About Me</a>
+                </div>
+                <p class="availability"><span class="dot"></span> Available for projects</p>
+            </div>
+
+            <div class="hero-photo">
+                <img src="yumi.jpg" alt="Profile photo of Yumi David" width="400" height="400">
+
+                <div class="glass-card stat-card">
+                    <p class="card-label">Experience</p>
+                    <p class="stat">3+ Years</p>
+                    <p class="card-note">learning &amp; building apps</p>
+                </div>
+                <div class="glass-card focus-card">
+                    <p class="card-label">Focus Areas</p>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Responsive Design</li>
+                        <li>Mobile Apps</li>
+                        <li>Databases</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <p class="section-label">About Me</p>
+            <h2>Learning by <span class="accent">building</span> real things.</h2>
+            <p class="about-text">
+              I am an Information Technology student at Bulacan State University,
+              building web and mobile platforms using HTML, CSS, JavaScript, Flutter,
+               Python, Java, and Firebase. I enjoy solving problems, collaborating on
+               team projects, and continuously improving my skills.
+            </p>
+
+            <div class="service-grid">
+                <article class="glass-card service">
+                    <span class="service-icon" aria-hidden="true">🌐</span>
+                    <h3>Web Development</h3>
+                    <p>Semantic HTML, modern CSS, and JavaScript.</p>
+                </article>
+                <article class="glass-card service">
+                    <span class="service-icon" aria-hidden="true">📱</span>
+                    <h3>Responsive Design</h3>
+                    <p>Layouts that look good on phones, tablets, and desktops.</p>
+                </article>
+                <article class="glass-card service">
+                    <span class="service-icon" aria-hidden="true">🔥</span>
+                    <h3>Firebase &amp; Flutter</h3>
+                    <p>Cross-platform apps with authentication and cloud data.</p>
+                </article>
+                <article class="glass-card service">
+                    <span class="service-icon" aria-hidden="true">🔧</span>
+                    <h3>Git &amp; GitHub</h3>
+                    <p>Version control and publishing projects online.</p>
+                </article>
+            </div>
+
+            <ul class="skills" aria-label="Tools I use">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Git &amp; GitHub</li>
+                <li>Flutter</li>
+                <li>Firebase</li>
+                <li>VS Code</li>
+            </ul>
+
+            <h3 class="process-title">My process</h3>
+            <ol class="process">
+                <li><span class="step-number">01</span><strong>Understand</strong><span>Learn what the user needs.</span></li>
+                <li><span class="step-number">02</span><strong>Plan</strong><span>Sketch the layout and features.</span></li>
+                <li><span class="step-number">03</span><strong>Build</strong><span>Write clean, commented code.</span></li>
+                <li><span class="step-number">04</span><strong>Test</strong><span>Check it on different screen sizes.</span></li>
+                <li><span class="step-number">05</span><strong>Deploy</strong><span>Publish it online with GitHub Pages.</span></li>
+            </ol>
+        </section>
+
+        <section class="projects" id="projects">
+            <p class="section-label">Featured Projects</p>
+            <h2>Designing impact through <span class="accent">meaningful</span> solutions.</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <img src="coop.png" alt="Preview of the CoOpinion survey app" width="600" height="340">
+                    <div class="card-body">
+                        <span class="card-number">01</span>
+                        <h3>CoOpinion</h3>
+                        <p>A Flutter survey app backed by Firebase Authentication and Realtime Database, migrated from a MySQL website.</p>
+                        <ul class="tags">
+                            <li>Flutter</li>
+                            <li>Firebase</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <a href="https://davidg5coopinion.infinityfreeapp.com/CoOpinion_Activity6/login.php" class="card-link">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="portfolio.png" alt="Preview of the personal portfolio website" width="600" height="340">
+                    <div class="card-body">
+                        <span class="card-number">02</span>
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive single-page portfolio built with semantic HTML, Flexbox/Grid CSS, and vanilla JavaScript.</p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="https://github.com/your-username/portfolio" class="card-link">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="cict.png" alt="Preview of a sample task tracker app" width="600" height="340">
+                    <div class="card-body">
+                        <span class="card-number">03</span>
+                        <h3>CICT Scholarship Management System
+                        </h3>
+                        <p>A sample to-do web app that lets users add, complete, and delete tasks, with data saved in the browser.</p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>LocalStorage</li>
+
+                        </ul>
+                        <a href="https://github.com/your-username/task-tracker" class="card-link">View on GitHub →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="contact-panel glass-card">
+            <div class="contact-info">
+                <p class="section-label">Have a project in mind?</p>
+                <h2>Let's build something <span class="accent">meaningful</span> together.</h2>
+                <ul class="contact-list">
+                    <li><a href="mailto:davidyumi55@gmail.com">✉ davidyumi55@gmail.com</a></li>
+                    <li><a href="https://github.com/your-username">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/yumi-david-676106369?">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/share/14cXj3Jn3kb/">Facebook</a></li>
+                </ul>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+                <div class="field">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <span class="error" id="name-error" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <span class="error" id="email-error" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell me about your project"></textarea>
+                    <span class="error" id="message-error" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message →</button>
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+        </div>
+
+        <p class="copyright">&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
