@@ -1,12 +1,10 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    const hamburger = document.getElementById("hamburger");        
-    const navLinks = document.getElementById("nav-links");        
-    const themeToggle = document.getElementById("theme-toggle"); 
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    const themeToggle = document.getElementById("theme-toggle");
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    const form = document.getElementById("contact-form");          
-    const formStatus = document.getElementById("form-status");    
+    const form = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
 
     function toggleMenu() {
         const isOpen = navLinks.classList.toggle("open");
@@ -20,16 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.textContent = "☰";
     }
 
-  
     function smoothScroll(event) {
         const targetId = this.getAttribute("href");
         const target = document.querySelector(targetId);
 
-      
         if (target) {
             event.preventDefault();
             target.scrollIntoView({ behavior: "smooth", block: "start" });
-            closeMenu(); 
+            closeMenu();
         }
     }
 
@@ -55,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function validateForm(event) {
-        event.preventDefault(); 
+        event.preventDefault();
         formStatus.textContent = "";
 
         const name = document.getElementById("name").value.trim();
@@ -79,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             setError("email", "");
         }
-       
+
         if (message === "") {
             setError("message", "Please write a message.");
             isValid = false;
@@ -92,14 +88,14 @@ document.addEventListener("DOMContentLoaded", function () {
             form.reset();
         }
     }
-   
+
     hamburger.addEventListener("click", toggleMenu);
     themeToggle.addEventListener("click", toggleTheme);
     form.addEventListener("submit", validateForm);
     anchorLinks.forEach(function (link) {
         link.addEventListener("click", smoothScroll);
     });
-   
+
     const savedTheme = localStorage.getItem("theme") || "dark";
     applyTheme(savedTheme);
 });
